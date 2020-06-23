@@ -12,20 +12,23 @@ class List extends React.Component {
 
   state = {
     columns: this.props.columns || [],
+    
+   
   }
   
   static propTypes = {
     title: PropTypes.node.isRequired,
     description: PropTypes.node,
     columns: PropTypes.array,
-    source: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
   }
 
   static defaultProps = {
     description: settings.defaultListDescription,
   }
-
+  
   addColumn(title){
+    
     this.setState(state => (
       {
         columns: [
@@ -40,8 +43,9 @@ class List extends React.Component {
       }
     ));
   }
-  
+
   render() {
+ 
     return (
       <section className={styles.component}>
         <h2 className={styles.subtitle}>ToDo</h2>
@@ -53,11 +57,14 @@ class List extends React.Component {
         </div>
 
         <div className={styles.columns}>
+        
         {this.state.columns.map(({key, ...columnProps}) => (
           <Column key={key} {...columnProps} />
+          
         ))}
-        </div>
 
+
+        </div>
         <div className={styles.creator}>
           <Creator text={settings.columnCreatorText} action={title => this.addColumn(title)}/>
         </div>
