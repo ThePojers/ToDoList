@@ -6,7 +6,6 @@ import ReactHtmlParser from 'react-html-parser';
 const Hero = props => (
     <header className={styles.component}>
         <h2 className={styles.title}>{ReactHtmlParser(props.titleText)}</h2>
-        <h2 className={styles.subtitle}>ToDo</h2>
         <img src={props.source} alt="nothing" className={styles.image} />
 
     </header>

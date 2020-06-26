@@ -19,6 +19,7 @@ class Column extends React.Component {
   }
 
   addCard(title) {
+
     this.setState(state => (
       {
         cards: [
@@ -35,6 +36,7 @@ class Column extends React.Component {
   render() {
     console.log(this.state.cards)
     return (
+
       <section className={styles.component}>
         <h2 className={styles.title}><span className={styles.icon}><Icon name={this.props.icon}></Icon></span>{this.props.title}</h2>
         <div>

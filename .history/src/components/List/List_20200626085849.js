@@ -48,6 +48,7 @@ class List extends React.Component {
 
     return (
       <section className={styles.component}>
+        <h2 className={styles.subtitle}>ToDo</h2>
 
         <Hero titleText={[this.props.title]} source={this.props.image} />
 

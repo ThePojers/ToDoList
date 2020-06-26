@@ -7,7 +7,7 @@ class Card extends React.Component {
 
 
   static propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.object.isRequired,
   }
 
   render() {

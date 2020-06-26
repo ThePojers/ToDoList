@@ -14,11 +14,13 @@ class Column extends React.Component {
 
 
   static propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.node.isRequired,
+    description: PropTypes.node,
     cards: PropTypes.array,
   }
 
   addCard(title) {
+
     this.setState(state => (
       {
         cards: [
@@ -35,6 +37,7 @@ class Column extends React.Component {
   render() {
     console.log(this.state.cards)
     return (
+
       <section className={styles.component}>
         <h2 className={styles.title}><span className={styles.icon}><Icon name={this.props.icon}></Icon></span>{this.props.title}</h2>
         <div>

@@ -19,6 +19,7 @@ class Column extends React.Component {
   }
 
   addCard(title) {
+
     this.setState(state => (
       {
         cards: [
