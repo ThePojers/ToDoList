@@ -12,6 +12,7 @@ class Column extends React.Component {
   
     render() {
       // console.log(this.props)
+      const { title } = this.props;
       return (
         <section className={styles.component}>
           <h1>{this.props.title}</h1>

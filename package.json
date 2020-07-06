@@ -7,18 +7,8 @@
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
     "lint": "eslint src/"
-<<<<<<< HEAD
-=======
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.js": "eslint"
->>>>>>> 67de05916b2db572bad9d4e752938f9cde6d9f70
-  },
+
 
   "keywords": [],
   "author": "",
