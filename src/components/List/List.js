@@ -27,7 +27,10 @@ class List extends React.Component {
     const {title, image, description} = this.props;
     return (
       <section className={styles.component}>
+<<<<<<< HEAD
         <h2 className={styles.subtitle}>ToDo</h2>
+=======
+>>>>>>> 67de05916b2db572bad9d4e752938f9cde6d9f70
         <Hero titleText={title} image={image} />
         <div className={styles.description}>
           {ReactHtmlParser(description)}

@@ -7,17 +7,17 @@ class Column extends React.Component {
     
 
     static propTypes = {
-      title: PropTypes.node.isRequired,
+      title: PropTypes.string.isRequired,
     }
   
     render() {
-        // console.log(this.props)
+      // console.log(this.props)
       return (
         <section className={styles.component}>
-            <h1>{this.props.title}</h1>
+          <h1>{this.props.title}</h1>
         </section>
-      )
+      );
     }
-  }
+}
   
-  export default Column;
+export default Column;

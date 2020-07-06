@@ -14,7 +14,11 @@ class App extends React.Component {
   }
 
   render() {
+<<<<<<< HEAD
     const {title, subtitle, image, description} = this.props;
+=======
+    const {title, subtitle, image, description, lists} = this.props;
+>>>>>>> 67de05916b2db572bad9d4e752938f9cde6d9f70
     return (
       
       <main className={styles.component}>
