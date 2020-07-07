@@ -3,7 +3,7 @@ import styles from './Column.scss';
 import PropTypes from 'prop-types';
 import Card from '../Card/Card';
 //import Creator from '../Creator/Creator';
-import {settings} from '../../data/dataStore';
+// import {settings} from '../../data/dataStore';
 import Icon from '../Icon/Icon';
 
 class Column extends React.Component {
@@ -11,6 +11,8 @@ class Column extends React.Component {
 
   static propTypes = {
     title: PropTypes.string.isRequired,
+    icon: PropTypes.node,
+    cards: PropTypes.array,
     
   }
 
@@ -19,7 +21,7 @@ class Column extends React.Component {
     return (
       
       <section className={styles.component}>
-        <h2 className={styles.title}><span className={styles.icon}><Icon name={this.props.icon}></Icon></span>{this.props.title}</h2>
+        <h2 className={styles.title}><span className={styles.icon}><Icon name={icon}></Icon></span>{title}</h2>
         <div>
           {/* {{this.state.cards.map(({key, ...cardsProps}) => (
              <Card key={key} {...cardsProps} />
