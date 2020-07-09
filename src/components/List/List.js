@@ -15,7 +15,7 @@ class List extends React.Component {
   static propTypes = {
     title: PropTypes.node.isRequired,
     description: PropTypes.node,
-    columns: PropTypes.object,
+    columns: PropTypes.array,
     image: PropTypes.string.isRequired,
     addColumn: PropTypes.func,
   }
@@ -30,6 +30,7 @@ class List extends React.Component {
     const {title, image, description, columns, addColumn} = this.props;
 
     console.log('columns', columns);
+    console.log(addColumn);
     return (
       <section className={styles.component}>
         <Hero titleText={title} image={image} />
