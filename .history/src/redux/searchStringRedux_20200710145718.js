@@ -1,4 +1,4 @@
-
+console.log('dupa');
 
 // selectors
 export const getSearchString = ({searchString}) => searchString;
@@ -16,7 +16,7 @@ export const createAction_changeSearchString = payload => ({ payload: { ...paylo
 export default function reducer(statePart = '', action = {}) {
   switch (action.type) {
     case CHANGE_CARD:
-      return [ action.payload];
+      return [...statePart, action.payload];
     default:
       return statePart;
   }

@@ -1,4 +1,4 @@
-
+console.log('dupa');
 
 // selectors
 export const getSearchString = ({searchString}) => searchString;
@@ -10,13 +10,13 @@ const createActionName = name => `app/${reducerName}/${name}`;
 // actions types
 export const CHANGE_CARD = createActionName('CHANGE_CARD');
 // action creators
-export const createAction_changeSearchString = payload => ({ payload: { ...payload}, type: CHANGE_CARD });
+export const ccreateAction_changeSearchString = payload => ({ payload: { ...payload}, type: CHANGE_CARD });
 
 // reducer
 export default function reducer(statePart = '', action = {}) {
   switch (action.type) {
     case CHANGE_CARD:
-      return [ action.payload];
+      return [...statePart, action.payload];
     default:
       return statePart;
   }

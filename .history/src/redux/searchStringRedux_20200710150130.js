@@ -1,4 +1,4 @@
-
+console.log('dupa');
 
 // selectors
 export const getSearchString = ({searchString}) => searchString;

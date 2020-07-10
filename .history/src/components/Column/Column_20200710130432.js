@@ -23,11 +23,10 @@ class Column extends React.Component {
     const { title, icon, cards, addCard} = this.props;
     console.log(addCard);
     return (
-      
+      {console.log(cards)}
       <section className={styles.component}>
         <h2 className={styles.title}><span className={styles.icon}><Icon name={icon}></Icon></span>{title}</h2>
         <div>
-          {console.log(cards)}
 
           {cards.map(cardData => (
             <Card key={cardData.id} {...cardData} />
