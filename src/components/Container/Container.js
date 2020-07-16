@@ -2,15 +2,12 @@ import React from 'react';
 import styles from './Container.scss';
 import PropTypes from 'prop-types';
 
-
-
-
-const Hero = props => (
+const Container = props => (
   <div className={styles.component}>
     {props.children}
   </div>
 );
-Hero.propTypes = {
+Container.propTypes = {
   children: PropTypes.node,
 };
-export default Hero;
+export default Container;
