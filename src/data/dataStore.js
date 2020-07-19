@@ -1,6 +1,7 @@
 export const settings = {
   columnCreatorText: 'Add new column',
   cardCreatorText: 'Add new card',
+  IconHeader: 'address-book',
   creator: {
     buttonOK: 'OK',
     buttonCancel: 'Cancel',
