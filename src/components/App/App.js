@@ -7,6 +7,7 @@ import FAQ from  '../FAQ/FAQ';
 import {AnimatedSwitch} from 'react-router-transition';
 import styles from './app.scss';
 import List from '../List/ListContainer';
+import SearchResults from '../SearchResults/SearchResultsContainer';
 
 const App = () => (
   
@@ -18,6 +19,7 @@ const App = () => (
         atActive={{ opacity: 1 }}
         className={styles.switchWrapper}
       >
+        <Route exact path="/Search/:phrase" component={SearchResults} />
         <Route exact path="/list/:id" component={List} />
         <Route exact path='/' component={Home} /> 
         <Route exact path='/info' component={Info} />

@@ -27,8 +27,8 @@ class Creator extends React.Component {
 
   handleOK = () => {
     if(this.state.value != ''){
-      // eslint-disable-next-line react/prop-types
-      this.props.action(this.state.value);
+      // // eslint-disable-next-line react/prop-types
+      // this.props.action(this.state.value);
       this.setState({
         value: '',
         visibleButtons: false,
