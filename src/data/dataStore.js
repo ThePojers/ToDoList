@@ -92,6 +92,18 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Things to do <sup>soon!</sup>',
+    description: 'Interesting things I want to check out!',
+    image: 'https://pluspng.com/img-png/free-vector-png-free-vector-graphics-splatter-1022.png',
+  },
+  {
+    id: 'list-3',
+    title: 'Things to do <sup>soon!</sup>',
+    description: 'Interesting things I want to check out!',
+    image: 'https://cdn5.vectorstock.com/i/1000x1000/89/69/colorful-abstract-brush-stroke-on-white-background-vector-21848969.jpg',
+  },
 ];
 
 const columns = [
