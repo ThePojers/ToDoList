@@ -17,17 +17,22 @@ class SearchResults extends React.Component {
     icon: PropTypes.node,
     cards: PropTypes.array,
     addCard: PropTypes.func,
+    changeSearchString: PropTypes.func,
+    phrase: PropTypes.string,
   }
 
+
   render() {
-    const { title, icon, cards, addCard} = this.props;
-    console.log(addCard);
+    const { title, icon, cards, addCard, phrase} = this.props;
+    console.log(phrase);
+    console.log(title);
+    this.props.changeSearchString(phrase);
     return (
       
       <section className={styles.component}>
         <h2 className={styles.title}><span className={styles.icon}><Icon name={icon}></Icon></span>{title}</h2>
         <div>
-          {console.log(cards)}
+          
 
           {cards.map(cardData => (
             <Card key={cardData.id} {...cardData} />

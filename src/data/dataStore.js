@@ -20,7 +20,9 @@ export const pageContents = {
   subtitle: 'A simple to-do app, with lists, columns and cards',
 };
 
-
+export const searchContent = {
+  title: 'Search Results',
+};
 
 export const listData = {
   title: 'Things to do <sup>soon!</sup>',
