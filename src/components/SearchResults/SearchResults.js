@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './SearchResults.scss';
 import PropTypes from 'prop-types';
 import Card from '../Card/Card';
-import Creator from '../Creator/Creator';
 import {settings} from '../../data/dataStore';
 import Icon from '../Icon/Icon';
 
@@ -21,12 +20,18 @@ class SearchResults extends React.Component {
     phrase: PropTypes.string,
   }
 
+  // eslint-disable-next-line react/no-deprecated
+  componentWillMount ()  {
+    const {phrase} = this.props;
+    console.log(phrase);
+    this.props.changeSearchString(phrase);
+  }
 
   render() {
-    const { title, icon, cards, addCard, phrase} = this.props;
+    const { title, icon, cards, phrase} = this.props;
     console.log(phrase);
     console.log(title);
-    this.props.changeSearchString(phrase);
+ 
     return (
       
       <section className={styles.component}>
@@ -38,9 +43,6 @@ class SearchResults extends React.Component {
             <Card key={cardData.id} {...cardData} />
           ))}
           
-        </div>
-        <div className={styles.creator}>
-          <Creator text={settings.cardCreatorText} action={addCard}/>
         </div>
       </section>
     );

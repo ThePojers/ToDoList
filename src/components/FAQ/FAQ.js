@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '../Container/Container';
 import Hero from '../Hero/Hero';
-import {listData} from '../../data/dataStore';
+import {faq} from '../../data/dataStore';
 
 
 class Faq extends React.Component {
@@ -9,8 +9,8 @@ class Faq extends React.Component {
   render (){
     return (
       <Container>
-        <Hero titleText={listData.faq.title} image={listData.faq.image} />
-        <p>{listData.faq.content}</p>
+        <Hero titleText={faq.title} image={faq.image} />
+        <p>{faq.content}</p>
       </Container>
     );
   }
